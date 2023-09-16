@@ -65,15 +65,15 @@ def main():
                         seen_typo_types.add(typo_type)
 
     try:
-        with open('REGISTERED.txt', 'w') as f:
+        with open('REGISTERED.csv', 'w') as f:
             for line in registered_lines:
                 f.write(line + '\n')
 
-        with open('UNREGISTERED.txt', 'w') as f:
+        with open('UNREGISTERED.csv', 'w') as f:
             for line in unregistered_lines:
                 f.write(line + '\n')
 
-        with open('ABREV-UNREG.txt', 'w') as f:
+        with open('ABREV-UNREG.csv', 'w') as f:
             for line in abrev_unreg_lines:
                 f.write(line + '\n')
 
